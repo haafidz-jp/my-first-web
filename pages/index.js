@@ -1,65 +1,39 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main className="bg-gray-800 font-sans leading-normal tracking-normal" style={{ height: `min-height:600px` }}>
+        <nav className="bg-gray-800 p-2 mt-0 w-full">
+          <div className="container mx-auto flex flex-wrap items-center">
+            <div className="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
+              <a className="text-white no-underline hover:text-white hover:no-underline" href="#">
+                <p className="text-2xl pl-2 text-white">Brand logo</p>
+              </a>
+            </div>
+            <div className="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+              <ul className="list-reset flex justify-between flex-1 md:flex-none items-center">
+                <li className="mr-3">
+                  <a className="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+                </li>
+                <li className="mr-3">
+                  <a className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+                </li>
+                <li className="mr-3">
+                  <a className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+                </li>
+                <li className="mr-3">
+                  <a className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
